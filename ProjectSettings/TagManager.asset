@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Anchor
-<<<<<<< Updated upstream
-  - Left Hand
-  - Right Hand
-  - Pin
-  - Ball
-=======
-  - StartButton
-  - StopButton
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX

@@ -30,6 +30,7 @@ public class MoleTrigger : MonoBehaviour
     {
         collisionDetected = true;
         ButtonPressedOn = true;
+        Debug.Log("Reched");
     }
 }
 /*public bool ButtonPressedOn;
