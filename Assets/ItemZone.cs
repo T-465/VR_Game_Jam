@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemZone : MonoBehaviour
 {
-    public GameObject ball;
+    public GameObject ballSpawn;
 
     void Update()
     {
@@ -18,7 +18,7 @@ public class ItemZone : MonoBehaviour
    {
         if (other.gameObject.tag == "Ball")
         {
-            other.transform.position = new Vector3(0, 1, 1);
+            other.transform.position = ballSpawn.transform.position;
 
 
         }
