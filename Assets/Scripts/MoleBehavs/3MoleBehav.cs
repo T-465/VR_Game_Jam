@@ -46,11 +46,11 @@ public class IIIMoleBehaviour : MonoBehaviour
     private IEnumerator Pattern()
     {
         yield return new WaitForSeconds(0.1f);
-        this.GetComponent<Rigidbody>().velocity = new Vector3(0f, 3f, 0f);
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0.4f, 0f);
         yield return new WaitForSeconds(0.3f);
         this.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
         yield return new WaitForSeconds(0.5f);
-        this.GetComponent<Rigidbody>().velocity = new Vector3(0f, -3f, 0f);
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0f, -0.4f, 0f);
         yield return new WaitForSeconds(0.3f);
         this.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
         //Debug.Log("Pattern Finished");

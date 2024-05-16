@@ -13,11 +13,11 @@ public class MoleTrigger : MonoBehaviour
 
     private void Awake()
     {
-        ButtonPressedOn = false;
+        ButtonPressedOn = true;
         collisionDetected = false;
         readStop = false;
     }
-    private void Update()
+    /*private void Update()
     {
         readStop = Controller.GetComponent<MoleControlSystem>().StopPattern;
         if (readStop == false)
@@ -26,6 +26,7 @@ public class MoleTrigger : MonoBehaviour
         }
 
     }
+    */
     private void OnCollisionEnter(Collision collision)
     {
         collisionDetected = true;
@@ -33,68 +34,3 @@ public class MoleTrigger : MonoBehaviour
         Debug.Log("Reched");
     }
 }
-/*public bool ButtonPressedOn;
-private bool ThisIsStartButton;
-private bool collideOccured;
-//public bool ButtonPressedOff;
-
-private void Awake()
-{
-    if (this.transform.tag == "StartButton")
-    {
-        ThisIsStartButton = true;
-    }
-    if (this.transform.tag == "StopButton")
-    {
-        ThisIsStartButton = false;
-    }
-
-    ButtonPressedOn = false;
-    collideOccured = false;
-}
-private void Update()
-{
-    if (ThisIsStartButton)
-    {
-
-        if (collideOccured)
-        {
-            StartCoroutine(TriggerOn());
-
-            collideOccured = false;
-
-        }
-
-    }
-
-
-    if (ThisIsStartButton == false)
-    {
-        if (collideOccured) 
-        {
-            ButtonPressedOn = false;
-            collideOccured = false;
-        }
-    }
-
-
-}
-
-private void OnCollisionEnter(Collision collision)
-{
-    collideOccured = true;
-}
-
-private IEnumerator TriggerOn()
-{
-    ButtonPressedOn = true;
-    yield return new WaitForSeconds(0.1f);
-    ButtonPressedOn = false;
-}
-private IEnumerator TriggerOff()
-{
-    ButtonPressedOn = false;
-    yield return new WaitForSeconds(0.1f);
-    ButtonPressedOn = false;
-}
-}*/
