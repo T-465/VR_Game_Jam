@@ -7,6 +7,8 @@ TagManager:
   - Anchor
   - Left Hand
   - Right Hand
+  - Pin
+  - Ball
   layers:
   - Default
   - TransparentFX
